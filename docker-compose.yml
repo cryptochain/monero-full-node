@@ -20,6 +20,9 @@ services:
         max-size: "100k"
         max-file: "10"
     ports:
+      - 18080:18080
+      - 18081:18081
+      - 28080:28080
       - 28081:28081
     networks:
       - bridge
