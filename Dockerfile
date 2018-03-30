@@ -25,4 +25,4 @@ EXPOSE 18080 18081 28080 28081
 
 RUN ./monerod --help
 
-CMD ./monerod --config-file=/root/monero-config/bitmonero.conf --detach --non-interactive
+CMD ./monerod --config-file=/root/monero-config/bitmonero.conf
