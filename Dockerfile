@@ -23,5 +23,7 @@ VOLUME /root/monero-config
 
 EXPOSE 18080 18081 28081
 
+RUN ./monerod --help
+
 ENTRYPOINT ["./monerod"]
 CMD ["--restricted-rpc", "--rpc-bind-ip=0.0.0.0", "--confirm-external-bind", "--config-file=/root/monero-config/bitmonero.conf"]
