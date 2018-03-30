@@ -21,7 +21,7 @@ RUN curl https://downloads.getmonero.org/cli/monero-linux-x64-v$MONERO_VERSION.t
 VOLUME /root/.bitmonero
 VOLUME /root/monero-config
 
-EXPOSE 18080 18081
+EXPOSE 18080 18081 28081
 
 ENTRYPOINT ["./monerod"]
 CMD ["--restricted-rpc", "--rpc-bind-ip=0.0.0.0", "--confirm-external-bind", "--config-file=/root/monero-config/bitmonero.conf"]
