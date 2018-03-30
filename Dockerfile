@@ -25,4 +25,4 @@ EXPOSE 18080 18081 28081
 
 RUN ./monerod --help
 
-ENTRYPOINT ["./monerod --config-file=/root/monero-config/bitmonero.conf"]
+CMD ./monerod --config-file=/root/monero-config/bitmonero.conf
