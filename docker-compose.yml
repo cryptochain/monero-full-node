@@ -28,7 +28,7 @@ services:
       - bridge
       - web-services
     volumes:
-      - ./data:/root/.bitmonero
+      # - ./data:/root/.bitmonero
       - ./config:/root/monero-config
 
 networks:
