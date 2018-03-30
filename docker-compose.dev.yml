@@ -24,6 +24,7 @@ services:
       - 18081:18081
       - 28080:28080
       - 28081:28081
+    tty: true
     volumes:
       - ./data:/root/.bitmonero
       - ./config:/root/monero-config
